@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Store | Diseño & Estilo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ========== NAVBAR ========== -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">NEXUS</div>
+            <div class="search-wrapper">
+                <input type="text" id="search-input" class="search-input" placeholder="🔍 Buscar producto...">
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Tienda</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="nav-right">
+                <div class="cart-icon" id="cart-btn">
+                    🛒 <span id="cart-count">0</span>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ========== HERO ========== -->
+        <section id="inicio" class="hero">
+            <div class="hero-particles">
+                <span class="particle p1"></span>
+                <span class="particle p2"></span>
+                <span class="particle p3"></span>
+                <span class="particle p4"></span>
+                <span class="particle p5"></span>
+                <span class="particle p6"></span>
+            </div>
+            <div class="hero-deco">
+                <div class="deco-ring ring-1"></div>
+                <div class="deco-ring ring-2"></div>
+                <div class="deco-ring ring-3"></div>
+                <div class="deco-icon">&#10022;</div>
+            </div>
+            <div class="hero-content">
+                <span class="hero-badge">Edición Exclusiva 2026</span>
+                <h1>Objetos que<br><em>desafían</em> lo ordinario</h1>
+                <p>Diseño único. Calidad premium. Piezas que generan conversación.</p>
+                <div class="hero-cta-group">
+                    <a href="#productos" class="btn-main">Ver Catálogo</a>
+                    <a href="#contacto" class="btn-ghost">Consultar</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== BARRA DE CONFIANZA ========== -->
+        <section class="trust-bar">
+            <div class="trust-item">🚚 Envío a todo el país</div>
+            <div class="trust-item">🔄 Devolución fácil</div>
+            <div class="trust-item">🔒 Compra segura</div>
+            <div class="trust-item">💬 Atención por WhatsApp</div>
+        </section>
+
+        <!-- ========== CATÁLOGO ========== -->
+        <section id="productos" class="catalog">
+            <h2>Nuestros Productos</h2>
+            <div class="filter-bar" id="filter-bar">
+                <button class="filter-btn active" data-cat="todos">Todos</button>
+                <button class="filter-btn" data-cat="ropa">Ropa</button>
+                <button class="filter-btn" data-cat="accesorios">Accesorios</button>
+                <button class="filter-btn" data-cat="deco">Decoración</button>
+            </div>
+            <div class="product-grid" id="product-container"></div>
+        </section>
+
+        <!-- ========== CONTACTO ========== -->
+        <section id="contacto" class="contact-section">
+            <div class="contact-container">
+                <h2>Contacto</h2>
+                <p>¿Tenés alguna duda o querés un pedido personalizado? ¡Hablemos!</p>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <span>📱 WhatsApp:</span>
+                        <a href="https://wa.me/542966734238" target="_blank">+54 2966734238</a>
+                    </div>
+                    <div class="info-item">
+                        <span>✉️ Email:</span>
+                        <a href="mailto:ezefabridalmao9@gmail.com">ezefabridalmao9@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="footer-logo">NEXUS</div>
+                <p class="footer-desc">Tienda de diseño y estilo. Envíos a todo Argentina.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Tienda</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Atención al cliente</h4>
+                <ul>
+                    <li><a href="https://wa.me/542966734238" target="_blank">WhatsApp</a></li>
+                    <li><a href="mailto:ezefabridalmao9@gmail.com">Email</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Pagos aceptados</h4>
+                <div class="payment-icons">
+                    <span class="pay-badge">💳 Tarjeta</span>
+                    <span class="pay-badge">🏦 Transferencia</span>
+                    <span class="pay-badge">💵 Efectivo</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 NEXUS Store. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- ========== BOTÓN FLOTANTE WHATSAPP ========== -->
+    <a href="https://wa.me/542966734238" target="_blank" class="whatsapp-float" title="Contactar por WhatsApp">
+        <span class="wa-label">¡Hablemos por WhatsApp!</span>
+        <div class="wa-btn">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+        </div>
+    </a>
+
+    <!-- ========== MODAL CARRITO ========== -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content cart-modal-content">
+            <div class="modal-header">
+                <h3>🛒 Tu Carrito</h3>
+                <span class="close" id="close-cart">&times;</span>
+            </div>
+            <div id="cart-items" class="cart-items-list"></div>
+            <div class="cart-footer">
+                <div class="cart-total-row">
+                    <span>Total:</span>
+                    <span class="cart-total-amount">$<span id="cart-total">0</span></span>
+                </div>
+                <button id="checkout-btn" class="btn-main btn-whatsapp">
+                    📲 Comprar por WhatsApp
+                </button>
+                <button class="btn-clear" id="clear-cart-btn">Vaciar carrito</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== MODAL QUICK VIEW ========== -->
+    <div id="quick-view-modal" class="modal">
+        <div class="modal-content quickview-content">
+            <span class="close" id="close-quickview">&times;</span>
+            <div id="quickview-body"></div>
+        </div>
+    </div>
+
+    <!-- ========== TOAST ========== -->
+    <div id="toast" class="toast"></div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
